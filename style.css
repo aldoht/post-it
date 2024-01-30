@@ -1,0 +1,55 @@
+body {
+	background-color: #253e66;
+}
+
+h1 {
+	color: white;
+	padding-top: 2rem;
+	padding-left: 2rem;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+	display: flex;
+	width: 80vw;
+	padding: 0 10vw 2rem 10vw;
+}
+
+.post-it-container {
+	flex: 4;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.post-it {
+	background-color: #FBFF2B;
+	margin-top: 5rem;
+	min-width: 15rem;
+	height: 15rem;
+	max-height: 15rem;
+}
+
+.add-more {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 2rem;
+	background-color: transparent;
+}
+
+form {
+	display: flex;
+	padding: 5rem 10vw;
+	justify-content: space-around;
+	align-items: flex-start;
+	height: 30vh;
+}
+
+button {
+	width: 20vw;
+	margin-top: 3vh;
+}
