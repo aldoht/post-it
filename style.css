@@ -1,5 +1,6 @@
 body {
 	background-color: #253e66;
+	margin: 0;
 }
 
 h1 {
@@ -42,14 +43,63 @@ h1 {
 }
 
 form {
+	width: 40vw;
+	height: 20vh;
+	margin: 5vh 30vw;
 	display: flex;
-	padding: 5rem 10vw;
-	justify-content: space-around;
-	align-items: flex-start;
-	height: 30vh;
+	align-items: center;
+	justify-content: center;
 }
 
-button {
-	width: 20vw;
-	margin-top: 3vh;
+.text-container {
+	height: 100%;
+	width: 25vw;
+	padding-right: 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.text-container > label {
+	color: white;
+}
+
+.text-container > textarea {
+	border-radius: 10px;
+	resize: none;
+}
+
+.text-container > textarea:focus-visible {
+	outline: none;
+	border: 3px solid #5679b3;
+}
+
+form > button {
+	width: 9vw;
+	height: fit-content;
+	border-radius: 5px;
+	background-color: #5679b3;
+	border: none;
+	box-shadow: 0 0 10px;
+	padding: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+	.post-it {
+		min-width: 10rem;
+		max-height: 10rem;
+	}
+
+	form {
+		width: 70vw;
+		margin: 2vh 15vw;
+	}
+
+	.text-container {
+		width: 50vw;
+	}
+
+	form > button {
+		width: 11vw;
+	}
 }

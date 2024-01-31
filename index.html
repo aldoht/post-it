@@ -29,9 +29,11 @@
 			</svg>
 		</div>
 	</div>
-	<form action="">
-		<label for="note-content">Add the sticky note content here...</label>
-		<textarea name="" id="note-content" cols="130" rows="10"></textarea>
+	<form action="" id="text-input">
+		<div class="text-container">
+			<label for="note-content">Place the sticky note content here:</label>
+			<textarea name="" id="note-content" cols="60" rows="5" form="text-input" placeholder="E.g. Go to the supermarket..." spellcheck="false"></textarea>
+		</div>
 		<button type="submit">Add Sticky Note</button>
 	</form>
 </body>
