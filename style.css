@@ -80,7 +80,7 @@ form > button {
 	border-radius: 5px;
 	background-color: #5679b3;
 	border: none;
-	box-shadow: 0 0 10px;
+	box-shadow: 0 0 10px black;
 	padding: 0.5rem;
 }
 
@@ -100,6 +100,6 @@ form > button {
 	}
 
 	form > button {
-		width: 11vw;
+		width: 13vw;
 	}
 }
