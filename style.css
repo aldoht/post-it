@@ -21,13 +21,14 @@ h1 {
 	flex: 4;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 }
 
 .post-it {
 	background-color: #FBFF2B;
 	margin-top: 5rem;
+	width: 15rem;
 	min-width: 15rem;
 	height: 15rem;
 	max-height: 15rem;
@@ -75,6 +76,11 @@ form {
 	border: 3px solid #5679b3;
 }
 
+.text-container > p {
+	margin: 0;
+	color: white;
+}
+
 form > button {
 	width: 9vw;
 	height: fit-content;
@@ -85,8 +91,9 @@ form > button {
 	padding: 0.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
 	.post-it {
+		width: 10rem;
 		min-width: 10rem;
 		max-height: 10rem;
 	}
@@ -94,13 +101,22 @@ form > button {
 	form {
 		width: 70vw;
 		margin: 2vh 15vw;
+		flex-direction: column;
+		gap: 2rem;
 	}
 
 	.text-container {
 		width: 50vw;
+		padding: 0;
+		height: fit-content;
 	}
 
 	form > button {
-		width: 13vw;
+		width: 50vw;
+	}
+
+	.add-more {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }

@@ -3,25 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sticky Notes</title>
+	<title>My Sticky Notes</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="icon" href="./icon.png">
 </head>
 <body>
 	<h1>My Sticky Notes</h1>
 	<div class="main-container">
 		<div class="post-it-container">
-			<div class="post-it"></div>
-			<div class="post-it"></div>
-			<div class="post-it"></div>
-			<div class="post-it"></div>
-			<div class="post-it"></div>
-			<div class="post-it"></div>
-			<div class="post-it"></div>
-			<div class="post-it"></div>
-			<div class="post-it"></div>
 		</div>
 		<div class="post-it add-more">
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" style="fill:#FFFFFF;">
@@ -33,8 +25,10 @@
 		<div class="text-container">
 			<label for="note-content">Place the sticky note content here:</label>
 			<textarea name="" id="note-content" cols="60" rows="5" form="text-input" placeholder="E.g. Go to the supermarket..." spellcheck="false"></textarea>
+			<p>You can remove a note by double-clicking on it.</p>
 		</div>
 		<button type="submit">Add Sticky Note</button>
 	</form>
+	<script src="./script.js"></script>
 </body>
 </html>
