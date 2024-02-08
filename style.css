@@ -33,6 +33,7 @@ h1 {
 	height: 15rem;
 	max-height: 15rem;
 	margin-right: 2rem;
+	overflow: scroll;
 }
 
 .add-more {
