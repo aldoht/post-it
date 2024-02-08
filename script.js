@@ -5,6 +5,15 @@ form.addEventListener("submit", function(e) {
 	createPostit();
 })
 
+form.addEventListener("keypress", function(e) {
+	if (e.key === "Enter") {
+		e.preventDefault();
+		document.getElementById("submit-btn").click();
+		let textAreaElem = form.firstElementChild.children[1];
+		textAreaElem.value = '';
+	}
+})
+
 const addMore = document.getElementsByClassName("add-more")[0].firstElementChild;
 
 addMore.addEventListener("click", function() {
